@@ -87,5 +87,8 @@ document.addEventListener("DOMContentLoaded",function(){
   console.log(planet_sun);
   planet_sun.addEventListener("mouseover",function(){
     console.log("mouse sobre sol");
+    for(var planet_pos in planets){
+      planets[planet_pos].startRotation();
+    }
   });
 });
